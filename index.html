@@ -33,13 +33,13 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             
             <p>What is your favorite sport?</p>
             <div class="input">
-            <input id="speech">
+            <input id="sport">
             </div>
             
             
             <p>What is your favorite movie?</p>
            <div class="put in">
-            <input id="talk">
+            <input id="movie">
         </div>
             
             <p>What is a way that your favorite sport connects to your favorite movie?</p>
@@ -60,6 +60,8 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 <script>
 /*__POPCODESTART__*/
 $(".butt").click(function() {
-     var speech = (parseInt($(".results").val()));
-     $(".results").append(name);
+     var sport = $("#sport").val();
+     var movie = $("#movie").val();
+     var elaborate= $("#elaborate").val();
+      $(".results").append("In the year 2050 "+sport+"will be in "+movie+elaborate);
      });</script></body></html>
